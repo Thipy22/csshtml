@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'aquarius' ;
+    src: url(Aquarius.otf);
+}
+
+@font-face {
+    font-family: 'Agdasima Bold' ;
+    src: url(Agdasima-Bold.ttf);
+}
+
+:root {
+    --cor0: #B7CBEE;
+    --cor1: #6E9CEB;
+    --cor2: #567AB8;
+    --cor3: #32476B;
+    --cor4: #525B6B;
+
+    --fontecima: 'Agdasima Bold'
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor3));
+
+    height: 120px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fontecima);
+    padding-top: 10px;
+}
+
+header p {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    border-radius: 3px;
+}
+
+main {
+    background-color: white;
+    max-width: 900px;
+    min-width: 200px;
+    margin: auto;
+    padding: 10px 20px 0px 20px;
+}
+
+main h1 {
+    font-size: 2em;
+    font-family: var(--fontecima);
+    padding: 0px 0px 20px 0px;
+    color: var(--cor4)
+}
+
+main h2 {
+    font-size: 1.5em;
+    padding: 0px 0px 0px 0px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    font-family: Aquarius;
+}
+
+main p {
+    margin: auto;
+    padding: 4px 0px 15px 0px;
+    text-align: justify;
+    line-height: 1.8em;
+    text-indent: 30px;
+}
+
+main img {
+    display: block;
+    margin: auto;
+    max-width: 880px;
+    min-width: 400px;
+    padding: 10px 0px 20px 0px;
+}
+
+aside {
+    background-color: #B7CBEE;
+    border-radius: 10px;
+}
+
+aside h3 {
+    background-color: #32476B;
+    color: var(--cor0);
+    border-radius: 10px 10px 0px 0px;
+    padding: 7px;
+}
+
+aside p {
+    padding: 20px
+}
+
+footer {
+    background-color: var(--cor4);
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer p{
+    padding: 0px;
+    text-align: center;
+    color: white;
+}
